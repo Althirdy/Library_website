@@ -50,48 +50,112 @@
      .community{
         bottom: -12rem;
         position: absolute;
+        display: flex;
         .pic{
+            margin-top: .7rem;
             width: 50px;
             height: 50px;
             position: absolute;
         }
         .first{
             background: url(../Imges/icon.png);
+            background-size: contain;
         }
         .second{
             left: 25px;
             background: url(../Imges/icon.png);
+            background-size: contain;
+
         }
         .third{
             left: 50px;
             background: url(../Imges/icon.png);
+            background-size: contain;
+
         }
         .community_desc{
             text-align: start;
             margin-left: 7rem;
             h3{
+                font-size: 1.5rem;
                 color: $hero-1st-txt-color;
             }
             p{
+                font-size: 1rem;
                 color: $hero-2nd-txt-color;
             }
         }
     }  
-    @include media('>tablet','<desktop'){
-        width: 80%;
+    @include media('>tablet','<=1150px'){
+        width:90%;
         margin-inline: auto;
         h1{
-            font-size: 4rem;
+            font-size: 3.3rem;
         }
         .desc{
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
         .explore,.about{
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
     }
-
+    @include media('>1151px'){
+        width: 80%;
+        margin-inline: auto;
+        h1{
+            font-size: 3.8rem;
+        }
+        .desc{
+            font-size: 1.8rem;
+        }
+        .explore,.about{
+            font-size: 1.2rem;
+        }
+    }
+    @include media('>=phone','<=tablet'){
+        width: 100%;
+            h1{
+                font-size: 2.5rem;
+            }
+            .desc{
+                font-size: 1.3rem;
+            }
+            .about,.explore{
+                font-size: .9rem;
+            }
+            .community{
+                .pic{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+    }
+    @include media('<phone'){
+            h1{
+                font-size: 2.5rem;
+            }
+            .desc{
+                font-size: 1.2rem;
+            }
+            .explore,.about{
+                font-size: .8rem;
+            }
+            .community{
+                .pic{
+                    width: 40px;
+                    height: 40px;
+                }
+                .community_desc{
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-size: .9rem;
+                    }
+                }
+            }
+    }
 }
 
 
