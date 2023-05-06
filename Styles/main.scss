@@ -1,0 +1,30 @@
+@import "./Breakpoints";
+@import "./Variables";
+@import "./navbar";
+@import "./hero";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: $body-main-bg;
+   .hero_section{
+     position: relative;    
+    background: url(../Imges/hero_background.png);
+    height: 80vh;
+    overflow-x: hidden;
+
+   }
+   .hero_container{
+        width: 90%;
+        margin-inline: auto;
+        max-width: 1224px;
+   }
+}

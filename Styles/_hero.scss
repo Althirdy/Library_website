@@ -1,0 +1,97 @@
+.hero_text{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    gap: 1rem;
+    font-family: $font-secondary;
+    h1{
+        font-size: 3.5rem;
+        color: $hero-1st-txt-color;
+    }
+    .desc{
+        color: $hero-2nd-txt-color;
+        font-size: 1.2rem;
+    }
+    .btn_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn{
+        padding: 7px 12px;
+        border: none;
+        border-radius: 14px;
+        font-size: .9rem;
+        font-family: $font-secondary;
+        cursor: pointer;
+    }
+    .explore{
+        background-color: $hero-btn-color;
+        color: $hero-1st-txt-color;
+        padding-right: 28px;
+        &::after{
+            content: '';
+            position: absolute;            
+            width: 22px;
+            height: 22px;
+            background: url(../Imges/arrow_icon.png);
+            background-size: contain;
+        }
+    }
+    .about{
+        background-color: transparent;
+        border: 1px solid $hero-2nd-txt-color;
+        color: $hero-1st-txt-color;
+        padding-inline: 15px;
+    }
+     .community{
+        bottom: -12rem;
+        position: absolute;
+        .pic{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+        }
+        .first{
+            background: url(../Imges/icon.png);
+        }
+        .second{
+            left: 25px;
+            background: url(../Imges/icon.png);
+        }
+        .third{
+            left: 50px;
+            background: url(../Imges/icon.png);
+        }
+        .community_desc{
+            text-align: start;
+            margin-left: 7rem;
+            h3{
+                color: $hero-1st-txt-color;
+            }
+            p{
+                color: $hero-2nd-txt-color;
+            }
+        }
+    }  
+    @include media('>tablet','<desktop'){
+        width: 80%;
+        margin-inline: auto;
+        h1{
+            font-size: 4rem;
+        }
+        .desc{
+            font-size: 2rem;
+        }
+        .explore,.about{
+            font-size: 1.1rem;
+        }
+
+    }
+
+}
+
+

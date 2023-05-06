@@ -1,0 +1,109 @@
+nav{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .logo_toggle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        h1{
+            font-size: 1.8rem;
+            color: $hero-1st-txt-color;
+            font-family: $font-primary;
+        }
+        
+        div{
+           background: url(../Imges/bars-solid.png) no-repeat;
+           background-size: contain;
+           height: 30px;
+           width: 30px;
+           z-index: 5;
+           cursor: pointer;
+           transition: background 200ms ease-in-out;
+        }
+        .show_toggle{
+            background: url(../Imges/xmark-solid.png) no-repeat;
+            background-size: contain;
+        }
+        // i{
+        //     position: absolute;
+        //     right: 5%;
+        //     color: $hero-1st-txt-color;
+        //     font-size: 1.3rem;
+        //     cursor: pointer;
+
+        // }
+        // #ham{
+        //     z-index: 2;
+        // }
+        // #xmark{
+        //     z-index: 6;
+        //     font-size: 1.5rem;
+        //     color: $rec-header-secondary;
+        //     display: none;
+        // }
+      
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        gap: 1rem;
+        background-color: $hero-1st-txt-color;
+        inset: 0 0 0 60%;
+        padding: 5rem 1rem;
+        transform: translateX(100%);
+        transition: transform 300ms ease-in;
+        a{
+            color: $rec-header-color;
+            font-family: $font-secondary;
+            transition: opacity 300ms ease-in-out;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+
+    .show_navbar{
+        transform: translateX(0);
+    }
+   
+// ---- Media Query
+//-----Small Phone
+   @include media('>tablet'){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        .logo_toggle{
+            h1{
+                font-size: 2.5rem;
+            }
+            div{
+                display: none;
+            }
+        }
+        ul{
+            inset: 0 0 0 0;
+            gap: 3rem;
+            height: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            position: static;
+            background-color: none;
+            transform: translateX(0);
+            transition: none;
+            a{
+                color: $hero-2nd-txt-color;
+            }
+        }
+
+   }
+
+
+}
+
