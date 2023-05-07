@@ -136,10 +136,10 @@ nav .show_navbar {
 .hero_text .explore {
   background-color: #1aaf7e;
   color: #d3f8e5;
-  transition: color, background-color 200ms ease-in-out;
+  transition: color, background-color 250ms ease-in-out;
 }
 .hero_text .explore:hover {
-  color: #1aaf7e;
+  color: #0a4a39;
   background-color: #d3f8e5;
 }
 .hero_text .about {
@@ -147,7 +147,7 @@ nav .show_navbar {
   border: 1px solid #aceed0;
   color: #d3f8e5;
   padding-inline: 15px;
-  transition: border, background-color 200ms ease-in-out;
+  transition: border, background-color 250ms ease-in-out;
 }
 .hero_text .about:hover {
   border: 1px solid #1aaf7e;

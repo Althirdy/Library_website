@@ -36,10 +36,10 @@
     .explore {
         background-color: $hero-btn-color;
         color: $hero-1st-txt-color;
-        transition: color, background-color 200ms ease-in-out;
+        transition: color, background-color 250ms ease-in-out;
 
         &:hover {
-            color: $hero-btn-color;
+            color: $rec-header-secondary;
             background-color: $hero-1st-txt-color;
         }
     }
@@ -49,7 +49,7 @@
         border: 1px solid $hero-2nd-txt-color;
         color: $hero-1st-txt-color;
         padding-inline: 15px;
-        transition: border, background-color 200ms ease-in-out;
+        transition: border, background-color 250ms ease-in-out;
 
         &:hover {
             border: 1px solid $hero-btn-color;
