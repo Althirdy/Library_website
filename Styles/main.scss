@@ -3,6 +3,7 @@
 @import "./component/navbar";
 @import "./component/hero";
 @import "./component/recommend";
+@import "./component/_about.scss";
 
 * {
     padding: 0;
@@ -31,9 +32,9 @@ body {
         max-width: 1224px;
     }
 
-    // .container {
-    //     width: 90%;
-    //     margin-inline: auto;
-    //     max-width: 1224px;
-    // }
+    .container {
+        width: 90%;
+        margin-inline: auto;
+        max-width: 1224px;
+    }
 }

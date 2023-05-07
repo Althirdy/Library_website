@@ -2,8 +2,9 @@
     
     font-family: $font-primary;
     h1{
+        font-family: $font-secondary;
         font-weight: $primary-bold;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-block: 2rem;
         color: $rec-header-color;
         text-align: center;
@@ -70,5 +71,21 @@
             }
 
         }
+    }
+    @include media('<=phone'){
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+    @include media('>phone','<=tablet'){
+        h1{
+            font-size: 2rem;
+        }
+    }
+    @include media('>tablet','<=desktop'){
+        h1{
+            font-size: 2.3rem;
+        }
+
     }
 }

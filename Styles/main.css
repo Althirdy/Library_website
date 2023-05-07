@@ -17,7 +17,7 @@ nav .logo_toggle {
 }
 nav .logo_toggle h1 {
   font-size: 1.8rem;
-  color: #F0E8E2;
+  color: #d3f8e5;
   font-family: "Poppins", sans-serif;
 }
 nav .logo_toggle div {
@@ -44,14 +44,14 @@ nav ul {
 nav ul li {
   display: inline;
   padding-block: 1rem;
-  border-bottom: 1px solid #EADBDB;
+  border-bottom: 1px solid #aceed0;
   width: 100%;
   text-align: center;
 }
 nav ul a {
   font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
-  color: #EADBDB;
+  color: #aceed0;
   transition: opacity 300ms ease-in-out;
 }
 nav ul a:hover {
@@ -92,7 +92,7 @@ nav .show_navbar {
     width: auto;
   }
   nav ul a {
-    color: #EADBDB;
+    color: #aceed0;
   }
 }
 @media (max-width: 359px) {
@@ -113,10 +113,10 @@ nav .show_navbar {
 }
 .hero_text h1 {
   font-size: 3.5rem;
-  color: #F0E8E2;
+  color: #d3f8e5;
 }
 .hero_text .desc {
-  color: #EADBDB;
+  color: #aceed0;
   font-size: 1.2rem;
 }
 .hero_text .btn_container {
@@ -134,24 +134,24 @@ nav .show_navbar {
   cursor: pointer;
 }
 .hero_text .explore {
-  background-color: #647C9E;
-  color: #F0E8E2;
+  background-color: #1aaf7e;
+  color: #d3f8e5;
   transition: color, background-color 200ms ease-in-out;
 }
 .hero_text .explore:hover {
-  color: #647C9E;
-  background-color: #F0E8E2;
+  color: #1aaf7e;
+  background-color: #d3f8e5;
 }
 .hero_text .about {
   background-color: transparent;
-  border: 1px solid #EADBDB;
-  color: #F0E8E2;
+  border: 1px solid #aceed0;
+  color: #d3f8e5;
   padding-inline: 15px;
   transition: border, background-color 200ms ease-in-out;
 }
 .hero_text .about:hover {
-  border: 1px solid #647C9E;
-  background-color: #647C9E;
+  border: 1px solid #1aaf7e;
+  background-color: #1aaf7e;
 }
 .hero_text .community {
   bottom: -8rem;
@@ -185,11 +185,11 @@ nav .show_navbar {
 }
 .hero_text .community .community_desc h3 {
   font-size: 1.5rem;
-  color: #F0E8E2;
+  color: #d3f8e5;
 }
 .hero_text .community .community_desc p {
   font-size: 1rem;
-  color: #EADBDB;
+  color: #aceed0;
 }
 @media (min-width: 769px) and (max-width: 1150px) {
   .hero_text {
@@ -289,10 +289,11 @@ nav .show_navbar {
   font-family: "Libre Caslon Text", serif;
 }
 .recommend h1 {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-block: 2rem;
-  color: #291709;
+  color: #052921;
   text-align: center;
 }
 .recommend .card {
@@ -314,13 +315,13 @@ nav .show_navbar {
 }
 .recommend .card h2 {
   font-size: 1.3rem;
-  color: #291709;
+  color: #052921;
   padding-block: 0.5rem;
 }
 .recommend .card p {
   font-size: 0.9rem;
   text-align: st;
-  color: #21150C;
+  color: #0b5a44;
 }
 .recommend .card .bot {
   display: flex;
@@ -343,7 +344,7 @@ nav .show_navbar {
 }
 .recommend .card .bot button:hover {
   background-color: #171616;
-  color: #F8F1F1;
+  color: #edfcf5;
 }
 @media (min-width: 1366px) {
   .recommend .card h2 {
@@ -351,6 +352,109 @@ nav .show_navbar {
   }
   .recommend .card p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 360px) {
+  .recommend h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 361px) and (max-width: 768px) {
+  .recommend h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1366px) {
+  .recommend h1 {
+    font-size: 2.3rem;
+  }
+}
+
+#about {
+  margin-top: 8vh;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+#about img {
+  display: none;
+}
+#about .right_about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  text-align: center;
+}
+#about .right_about h1 {
+  font-size: 2.5rem;
+  color: #052921;
+}
+#about .right_about p {
+  font-size: 1.1rem;
+  color: #0b5a44;
+}
+#about .right_about .stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+#about .right_about .stats .about_stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+#about .right_about .stats .about_stats h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #0a4a39;
+}
+#about .right_about .stats .about_stats p {
+  font-size: 1rem;
+  color: #0b5a44;
+}
+@media (min-width: 768px) and (max-width: 1365px) {
+  #about .right_about h1 {
+    font-size: 3.5rem;
+  }
+  #about .right_about p {
+    font-size: 1.2rem;
+  }
+  #about .right_about .stats .about_stats h3 {
+    font-size: 3rem;
+  }
+  #about .right_about .stats .about_stats p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1366px) {
+  #about {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #about img {
+    display: block;
+  }
+  #about .right_about {
+    align-items: start;
+  }
+  #about .right_about h1 {
+    text-align: start;
+    font-size: 3.7rem;
+  }
+  #about .right_about p {
+    text-align: start;
+    font-size: 1.3rem;
+  }
+  #about .right_about .stats .about_stats h3 {
+    font-size: 2.7rem;
+  }
+  #about .right_about .stats .about_stats p {
+    font-size: 1.3rem;
   }
 }
 
@@ -363,7 +467,7 @@ nav .show_navbar {
 }
 
 body {
-  background-color: #F8F1F1;
+  background-color: #edfcf5;
 }
 body .hero_section {
   position: relative;
@@ -373,6 +477,11 @@ body .hero_section {
   padding-bottom: 15vh;
 }
 body .hero_container {
+  width: 90%;
+  margin-inline: auto;
+  max-width: 1224px;
+}
+body .container {
   width: 90%;
   margin-inline: auto;
   max-width: 1224px;

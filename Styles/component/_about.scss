@@ -1,0 +1,99 @@
+#about{
+    margin-top: 8vh;
+    font-family: $font-secondary;
+    padding: 1rem;
+    img{
+        display: none;
+    }
+    .right_about{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.3rem;
+        text-align: center;
+        h1{
+            font-size: 2.5rem;
+            color: $rec-header-color;
+        }
+        p{
+            font-size: 1.1rem;
+            color: $rec-header-tertiary;
+        }
+        .stats{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            .about_stats{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: start;
+                h3{
+                    font-size: 2.3rem;
+                    font-weight: $secondary-bold;
+                    color: $rec-header-secondary;
+                }
+                p{
+                    font-size: 1rem;
+                    color: $rec-header-tertiary;
+                }
+            }
+
+        }
+        
+    }
+
+    @include media('>=tablet','<desktop'){
+        .right_about{
+            h1{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+            .stats{
+               .about_stats{
+                h3{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+               }
+            }
+        }
+    }
+    @include media('>=desktop'){
+        display: flex;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            display: block;
+        }
+        .right_about{
+            align-items: start;
+            h1{
+                text-align: start;
+                font-size: 3.7rem;
+            }
+            p{
+                text-align: start;
+                font-size: 1.3rem;
+            }
+            .stats{
+                .about_stats{
+                    h3{
+                        font-size: 2.7rem;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

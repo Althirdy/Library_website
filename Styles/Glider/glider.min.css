@@ -17,8 +17,7 @@
 }
 
 .glider-contain {
-    width: 95%;
-    max-width: 1224px;
+    width: 100%;
     margin-inline: auto;
 }
 
