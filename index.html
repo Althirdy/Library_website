@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookBrew</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Glider Style -->
+    <link rel="stylesheet" href="./Styles/Glider/glider.min.css">
     <!-- STYLE -->
     <link rel="stylesheet" href="./Styles/main.css">
     <!-- Font Awesome -->
@@ -41,7 +45,7 @@
                     <div class="pic_container">
                         <div class="first pic"></div>
                         <div class="second pic"></div>
-                        <div class="third pic"></div>    
+                        <div class="third pic"></div>
                     </div>
                     <div class="community_desc">
                         <h3>10K +</h3>
@@ -50,11 +54,33 @@
                 </div>
             </section>
         </div>
-
     </main>
+    <div class="container">
+        <section class="recommend">
+            <h1 >Recommended Books</h1>
+            <div class="glider-contain" >
+                <div class="glider">
+
+                </div>
+
+                <div role="tablist" class="dots"></div>
+            </div>
+
+        </section>
 
 
-    <script src="./Script/app.js"></script>
+    </div>
+
+
+    <script src="./Script/app.mjs" type="module"></script>
+    <!-- Glider -->
+    <script src="./Script/Glider/glider.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- END OF AOS -->
 </body>
 
 </html>

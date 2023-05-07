@@ -1,10 +1,10 @@
-@import "./Breakpoints";
-@import "./Variables";
-@import "./navbar";
-@import "./hero";
+@import "./component/Breakpoints";
+@import "./component/Variables";
+@import "./component/navbar";
+@import "./component/hero";
+@import "./component/recommend";
 
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,18 +13,27 @@
 
 }
 
-body{
+body {
     background-color: $body-main-bg;
-   .hero_section{
-     position: relative;    
-    background: url(../Imges/hero_background.png);
-    overflow-x: hidden;
-    padding-bottom: 15rem;
 
-   }
-   .hero_container{
+    .hero_section {
+        position: relative;
+        background: url(../Imges/hero_background.png);
+        background-size: cover;
+        overflow: hidden;
+        padding-bottom: 15vh;
+
+    }
+
+    .hero_container {
         width: 90%;
         margin-inline: auto;
         max-width: 1224px;
-   }
+    }
+
+    // .container {
+    //     width: 90%;
+    //     margin-inline: auto;
+    //     max-width: 1224px;
+    // }
 }

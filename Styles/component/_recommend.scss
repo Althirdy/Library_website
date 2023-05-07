@@ -1,0 +1,74 @@
+.recommend{
+    
+    font-family: $font-primary;
+    h1{
+        font-weight: $primary-bold;
+        font-size: 2rem;
+        margin-block: 2rem;
+        color: $rec-header-color;
+        text-align: center;
+    }
+  
+    .card{
+        border: 1px solid $rec-btn-primary;
+        border-radius: 10px;
+        padding: .7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .book{
+            width: 130px;
+            height: 20vh;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 3px 2px 5px rgba(8, 8, 8, 0.329);
+        }
+        h2{
+            font-size: 1.3rem;
+            color: $rec-header-color;
+            padding-block: .5rem;
+        }
+        p{
+            font-size: .9rem;
+            text-align: st;
+            color: $rec-header-tertiary;
+        }
+        .bot{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            img{
+                // margin-left: -25px;
+                width: 100px;
+            }
+            button{
+                border: 1px solid $rec-btn-primary;
+                background: transparent;
+                padding: 3px 18px;
+                border-radius: 15px;
+                font-size: .9rem;
+                transition: background,color 300ms ease-in-out;
+                cursor: pointer;
+                font-family: $font-secondary;
+                &:hover{
+                     background-color: $rec-btn-primary;
+                     color: $body-main-bg;   
+                }
+            }
+        }
+    }
+    
+    @include media('>=desktop'){
+        .card{
+            h2{
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+
+        }
+    }
+}

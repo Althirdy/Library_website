@@ -5,7 +5,7 @@
 **/
 @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 nav {
-  height: 8vh;
+  padding-top: 1vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,8 +17,8 @@ nav .logo_toggle {
 }
 nav .logo_toggle h1 {
   font-size: 1.8rem;
-  color: #DFCDCD;
-  font-family: "Libre Caslon Text", serif;
+  color: #F0E8E2;
+  font-family: "Poppins", sans-serif;
 }
 nav .logo_toggle div {
   background: url(../Imges/bars-solid.png) no-repeat;
@@ -36,25 +36,35 @@ nav .logo_toggle .show_toggle {
 nav ul {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  z-index: 2;
-  gap: 1rem;
-  background-color: #DFCDCD;
-  inset: 0 0 0 60%;
-  padding: 5rem 1rem;
-  transform: translateX(100%);
-  transition: transform 300ms ease-in;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: height 300ms ease-in-out;
+}
+nav ul li {
+  display: inline;
+  padding-block: 1rem;
+  border-bottom: 1px solid #EADBDB;
+  width: 100%;
+  text-align: center;
 }
 nav ul a {
-  color: #291709;
+  font-size: 1.1rem;
   font-family: "Poppins", sans-serif;
+  color: #EADBDB;
   transition: opacity 300ms ease-in-out;
 }
 nav ul a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 nav .show_navbar {
-  transform: translateX(0);
+  height: 12rem;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  nav .logo_toggle div {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 @media (min-width: 769px) {
   nav {
@@ -69,20 +79,26 @@ nav .show_navbar {
     display: none;
   }
   nav ul {
-    inset: 0 0 0 0;
-    gap: 3rem;
-    height: 0;
-    padding: 0;
     display: flex;
-    align-items: center;
     flex-direction: row;
-    position: static;
-    background-color: none;
-    transform: translateX(0);
-    transition: none;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+  }
+  nav ul li {
+    padding: 0;
+    border: none;
+    display: block;
+    width: auto;
   }
   nav ul a {
     color: #EADBDB;
+  }
+}
+@media (max-width: 359px) {
+  nav .logo_toggle div {
+    width: 1.3rem;
+    height: 1.3rem;
   }
 }
 
@@ -97,7 +113,7 @@ nav .show_navbar {
 }
 .hero_text h1 {
   font-size: 3.5rem;
-  color: #DFCDCD;
+  color: #F0E8E2;
 }
 .hero_text .desc {
   color: #EADBDB;
@@ -107,37 +123,39 @@ nav .show_navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.7rem;
 }
 .hero_text .btn {
-  padding: 7px 12px;
+  padding: 7px 14px;
   border: none;
-  border-radius: 14px;
+  border-radius: 20px;
   font-size: 0.9rem;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 .hero_text .explore {
-  background-color: #2C4365;
-  color: #DFCDCD;
-  padding-right: 28px;
+  background-color: #647C9E;
+  color: #F0E8E2;
+  transition: color, background-color 200ms ease-in-out;
 }
-.hero_text .explore::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background: url(../Imges/arrow_icon.png);
-  background-size: contain;
+.hero_text .explore:hover {
+  color: #647C9E;
+  background-color: #F0E8E2;
 }
 .hero_text .about {
   background-color: transparent;
   border: 1px solid #EADBDB;
-  color: #DFCDCD;
+  color: #F0E8E2;
   padding-inline: 15px;
+  transition: border, background-color 200ms ease-in-out;
+}
+.hero_text .about:hover {
+  border: 1px solid #647C9E;
+  background-color: #647C9E;
 }
 .hero_text .community {
-  bottom: -12rem;
+  bottom: -8rem;
+  left: 0;
   position: absolute;
   display: flex;
 }
@@ -167,7 +185,7 @@ nav .show_navbar {
 }
 .hero_text .community .community_desc h3 {
   font-size: 1.5rem;
-  color: #DFCDCD;
+  color: #F0E8E2;
 }
 .hero_text .community .community_desc p {
   font-size: 1rem;
@@ -178,13 +196,17 @@ nav .show_navbar {
     width: 90%;
     margin-inline: auto;
   }
+  .hero_text .community {
+    bottom: -7rem;
+  }
   .hero_text h1 {
     font-size: 3.3rem;
   }
   .hero_text .desc {
     font-size: 1.6rem;
   }
-  .hero_text .explore, .hero_text .about {
+  .hero_text .explore,
+  .hero_text .about {
     font-size: 1rem;
   }
 }
@@ -193,19 +215,23 @@ nav .show_navbar {
     width: 80%;
     margin-inline: auto;
   }
+  .hero_text .community {
+    bottom: -7rem;
+  }
   .hero_text h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
   }
   .hero_text .desc {
     font-size: 1.8rem;
   }
-  .hero_text .explore, .hero_text .about {
-    font-size: 1.2rem;
+  .hero_text .explore,
+  .hero_text .about {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 360px) and (max-width: 768px) {
   .hero_text {
-    width: 100%;
+    width: 95%;
   }
   .hero_text h1 {
     font-size: 2.5rem;
@@ -213,33 +239,118 @@ nav .show_navbar {
   .hero_text .desc {
     font-size: 1.3rem;
   }
-  .hero_text .about, .hero_text .explore {
+  .hero_text .about,
+  .hero_text .explore {
     font-size: 0.9rem;
   }
-  .hero_text .community .pic {
-    width: 40px;
-    height: 40px;
+  .hero_text .community {
+    bottom: -6rem;
+  }
+  .hero_text .community .community_desc h3 {
+    font-size: 1.3rem;
+  }
+  .hero_text .community .community_desc p {
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 359px) {
+  .hero_text {
+    width: 100%;
+  }
   .hero_text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .hero_text .desc {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
-  .hero_text .explore, .hero_text .about {
-    font-size: 0.8rem;
+  .hero_text .btn_container {
+    gap: 1rem;
+  }
+  .hero_text .explore,
+  .hero_text .about {
+    font-size: 0.7rem;
+  }
+  .hero_text .community {
+    bottom: -7rem;
   }
   .hero_text .community .pic {
     width: 40px;
     height: 40px;
   }
   .hero_text .community .community_desc h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .hero_text .community .community_desc p {
     font-size: 0.9rem;
+  }
+}
+
+.recommend {
+  font-family: "Libre Caslon Text", serif;
+}
+.recommend h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-block: 2rem;
+  color: #291709;
+  text-align: center;
+}
+.recommend .card {
+  border: 1px solid #171616;
+  border-radius: 10px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.recommend .card .book {
+  width: 130px;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 3px 2px 5px rgba(8, 8, 8, 0.329);
+}
+.recommend .card h2 {
+  font-size: 1.3rem;
+  color: #291709;
+  padding-block: 0.5rem;
+}
+.recommend .card p {
+  font-size: 0.9rem;
+  text-align: st;
+  color: #21150C;
+}
+.recommend .card .bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.recommend .card .bot img {
+  width: 100px;
+}
+.recommend .card .bot button {
+  border: 1px solid #171616;
+  background: transparent;
+  padding: 3px 18px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  transition: background, color 300ms ease-in-out;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.recommend .card .bot button:hover {
+  background-color: #171616;
+  color: #F8F1F1;
+}
+@media (min-width: 1366px) {
+  .recommend .card h2 {
+    font-size: 1.4rem;
+  }
+  .recommend .card p {
+    font-size: 1rem;
   }
 }
 
@@ -257,8 +368,9 @@ body {
 body .hero_section {
   position: relative;
   background: url(../Imges/hero_background.png);
-  overflow-x: hidden;
-  padding-bottom: 15rem;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 15vh;
 }
 body .hero_container {
   width: 90%;

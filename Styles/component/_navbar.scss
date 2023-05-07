@@ -1,5 +1,5 @@
 nav{
-    height: 8vh;
+    padding-top: 1vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -11,7 +11,7 @@ nav{
         h1{
             font-size: 1.8rem;
             color: $hero-1st-txt-color;
-            font-family: $font-primary;
+            font-family: $font-secondary;
         }
         
         div{
@@ -49,29 +49,43 @@ nav{
     ul{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        z-index: 2;
-        gap: 1rem;
-        background-color: $hero-1st-txt-color;
-        inset: 0 0 0 60%;
-        padding: 5rem 1rem;
-        transform: translateX(100%);
-        transition: transform 300ms ease-in;
+        align-items: center;
+        overflow: hidden;
+        height: 0;
+        transition: height 300ms ease-in-out;
+        li{
+            display: inline;
+            padding-block: 1rem;
+            border-bottom: 1px solid $hero-2nd-txt-color;
+            width: 100%;
+            text-align: center;
+        }
         a{
-            color: $rec-header-color;
+
+            font-size: 1.1rem;
             font-family: $font-secondary;
+            color: $hero-2nd-txt-color;
             transition: opacity 300ms ease-in-out;
             &:hover{
-                opacity: .7;
+                opacity: .8;
             }
         }
     }
 
-    .show_navbar{
-        transform: translateX(0);
-    }
+   .show_navbar{
+    height: 12rem;
+    } 
    
 // ---- Media Query
+@include media('>=phone','<tablet'){
+    .logo_toggle{
+        div{
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+    }
+
+}
 //-----Small Phone
    @include media('>tablet'){
     flex-direction: row;
@@ -86,22 +100,30 @@ nav{
             }
         }
         ul{
-            inset: 0 0 0 0;
-            gap: 3rem;
-            height: 0;
-            padding: 0;
             display: flex;
-            align-items: center;
             flex-direction: row;
-            position: static;
-            background-color: none;
-            transform: translateX(0);
-            transition: none;
+            align-items: center;
+            height: auto;
+            gap: 2rem;
+            li{
+                padding: 0;
+                border: none;
+                display: block;
+                width: auto;
+            }
             a{
                 color: $hero-2nd-txt-color;
             }
         }
 
+   }
+   @include media('<phone'){
+        .logo_toggle{
+            div{
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
    }
 
 

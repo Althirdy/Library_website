@@ -1,0 +1,161 @@
+const recommend = [{
+    id: 1,
+    title: `A Court of Mist and Fury`,
+    category: `recommended`,
+    author: `Sarah J. Maas`,
+    img: `https://covers.openlibrary.org/b/id/13325541-L.jpg`,
+    href: `https://openlibrary.org/works/OL17860744W/A_Court_of_Mist_and_Fury#starRatingSection`,
+    description: `Feyre has undergone more trials than one human woman can carry in her heart. Though she's now been granted the powers and lifespan of the High Fae, she is haunted by her time Under the Mountain and the terrible deeds she performed to save the lives of Tamlin and his people.
+    As her marriage to Tamlin approaches, Feyre's hollowness and nightmares consume her. She finds herself split into two different people: one who upholds her bargain with Rhysand, High Lord of the feared Night Court, and one who lives out her life in the Spring Court with Tamlin. While Feyre navigates a dark web of politics, passion, and dazzling power, a greater evil looms. She might just be the key to stopping it, but only if she can harness her harrowing gifts, heal her fractured soul, and decide how she wishes to shape her future-and the future of a world in turmoil.
+    Bestselling author Sarah J. Maas's masterful storytelling brings this second book in her dazzling, sexy, action-packed series to new heights.
+    `,
+    ratings: `142`,
+    have_read: `141`,
+    publish_data: `2020`,
+    publisher: `Bloomsbury Publishing`,
+    language: `English`,
+    pages: 640
+}, {
+    id: 2,
+    title: `A Game of Thrones`,
+    category: `recommended`,
+    author: `George R. R. Martin`,
+    img: `https://covers.openlibrary.org/b/id/11291394-L.jpg`,
+    href: `https://openlibrary.org/works/OL257943W/A_Game_of_Thrones`,
+    description: [`A GAME OF THRONES`, `Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens.
+    `, `Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens.
+    `],
+    ratings: `338`,
+    have_read: `387`,
+    publish_data: `May 28, 2002`,
+    publisher: `Bantam Books`,
+    language: `English`,
+    pages: 704
+}, {
+    id: 3,
+    title: `Teias de charlotte`,
+    category: `recommended`,
+    author: `E. B. White`,
+    img: `https://covers.openlibrary.org/b/id/8311468-L.jpg`,
+    href: `https://openlibrary.org/works/OL483391W/Charlotte%27s_Web`,
+    description: [`Wilbur the pig is desolate when he discovers that he is destined to be the farmer's Christmas dinner until his spider friend, Charlotte, decides to help him.
+    `],
+    ratings: `207`,
+    have_read: `278`,
+    publish_data: `2002`,
+    publisher: `HarperCollins Publishers`,
+    language: `Portuguese`,
+    pages: 216
+},
+{
+    id: 4,
+    title: `The Cruel Prince`,
+    category: `recommended`,
+    author: `Holly Black`,
+    img: `https://covers.openlibrary.org/b/id/13162571-L.jpg`,
+    href: `https://openlibrary.org/works/OL21178912W/El_Pr%C3%ADncipe_Cruel`,
+    description: [`Jude was seven when her parents were murdered and she and her two sisters were stolen away to live in the treacherous High Court of Faerie. Ten years later, Jude wants nothing more than to belong there, despite her mortality. But many of the fey despise humans. Especially Prince Cardan, the youngest and wickedest son of the High King.`,
+                   `To win a place at the Court, she must defy him–and face the consequences.`,`To win a place at the Court, she must defy him–and face the consequences.
+                   ` ],
+    ratings: `38`,
+    have_read: `21`,
+    publish_data: `2018`,
+    publisher: `Hot Key Books`,
+    language: `English`,
+    pages: 385
+},{
+    id: 5,
+    title: `Think Like a Monk`,
+    category: `recommended`,
+    author: `Jay Shetty`,
+    img:`https://covers.openlibrary.org/b/id/10476383-L.jpg`,
+    href: `https://openlibrary.org/works/OL21237606W/Think_Like_a_Monk`,
+    description: [`Jay Shetty, social media superstar and host of the #1 podcast On Purpose, distills the timeless wisdom he learned as a monk into practical steps`,
+                    `Shetty grew up in a family where you could become one of three things—a doctor, a lawyer, or a failure. His family was convinced he had chosen option three: instead of attending his college graduation ceremony, he headed to India to become a monk, to meditate every day for four to eight hours, and devote his life to helping others. After three years, one of his teachers told him that he would have more impact on the world if he left the monk’s path to share his experience and wisdom with others. Heavily in debt, and with no recognizable skills on his résumé, he moved back home in north London with his parents.`,
+                    `Shetty reconnected with old school friends—many working for some of the world’s largest corporations—who were experiencing tremendous stress, pressure, and unhappiness, and they invited Shetty to coach them on well-being, purpose, and mindfulness. Since then, Shetty has become one of the world’s most popular influencers. *In 2017, he was named in the Forbes magazine 30-under-30 for being a game-changer in the world of media. In 2018, he had the #1 video on Facebook with over 360 million views. His social media following totals over 38 million, he has produced over 400 viral videos which have amassed more than 8 billion views, and his podcast, On Purpose, is consistently ranked the world’s #1 Health and Wellness podcast.`],
+    ratings: `49`,
+    have_read: `29`,
+    publish_data:`Sep 08, 2020`,
+    publisher: `Simon & Schuster Audio`,
+    language: `English`,
+    pages: 228
+},
+{
+    id: 6,
+    title: `The Psychology of Money`,
+    category: `recommended`,
+    author: `Morgan Housel`,
+    img:`https://covers.openlibrary.org/b/id/12824425-L.jpg`,
+    href: `https://openlibrary.org/works/OL21640039W/The_Psychology_of_Money`,
+    description: [`Timeless lessons on wealth, greed, and happiness doing well with money isn’t necessarily about what you know. It’s about how you behave. And behavior is hard to teach, even to really smart people. How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people don’t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life’s most important matters.    `],
+    ratings: `80`,
+    have_read: `49`,
+    publish_data:`Sep 08, 2020`,
+    publisher: `Harriman House`,
+    language: `English`,
+    pages: 256
+},
+{
+    id: 7,
+    title: `Red, White & Royal Blue`,
+    category: `recommended`,
+    author: `Casey McQuiston and Ramon De Ocampo`,
+    img:`https://covers.openlibrary.org/b/id/8311468-L.jpg`,
+    href: `https://openlibrary.org/works/OL20090688W/Red_White_Royal_Blue`,
+    description: [`When his mother became President of the United States, Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal. Handsome, charismatic, genius--his image is pure millennial-marketing gold for the White House. There's only one problem: Alex has a beef with an actual prince, Henry, across the pond. And when the tabloids get hold of a photo involving an Alex/Henry altercation, U.S./British relations take a turn for the worse.`,
+                    `Heads of family and state and other handlers devise a plan for damage control: Stage a truce between the two rivals. What at first begins as a fake, Instagrammable friendship grows deeper, and more dangerous, than either Alex or Henry could have imagined. Soon Alex finds himself hurtling into a secret romance with a surprisingly unstuffy Henry that could derail the presidential campaign and upend two nations. It raises the question: Can love save the world after all? Where do we find the courage, and the power, to be the people we are meant to be? And how can we learn to let our true colors shine through?`],      
+    ratings: `62`,
+    have_read: `56`,
+    publish_data:`2019`,
+    publisher: `St. Martin's Griffin`,
+    language: `English`,
+    pages: 421
+},
+{
+    id: 8,
+    title: `The Subtle Art of Not Giving a Fuck`,
+    category: `recommended`,
+    author: `Mark Manson`,
+    img:`https://covers.openlibrary.org/b/id/8231990-M.jpg`,
+    href: `https://openlibrary.org/works/OL17590212W/The_Subtle_Art_of_Not_Giving_a_F%2Ack`,
+    description: [`This breakout, mega bestseller is the self-help book for people who hate self-help. It’s as much a pat on the back as a slap in the face. It’s the first truly no BS guide to flourishing in a crazy, crazy world—a truly counterintuitive approach to living a good life.`],
+    ratings: `517`,
+    have_read: `486`,
+    publish_data:`2019`,
+    publisher: `HarperLuxe`,
+    language: `English`,
+    pages: 256
+},
+{
+    id: 9,
+    title: `Little, Brown Book Group Limited`,
+    category: `recommended`,
+    author: `Tahereh Mafi`,
+    img:`https://covers.openlibrary.org/b/id/7272906-L.jpg`,
+    href: `https://openlibrary.org/works/OL16813331W/Ignite_Me`,
+    description: [`A girl who has the touch to kill and only 2 guys who are able to touch her which one will she choose everyone's enemy or her childhood best friend. who gonna win the war the 'gifted' people or the army. Will she get her revenge on the enemy's father or will she die along the rest.`],
+    ratings: `29`,
+    have_read: `59`,
+    publish_data:`February 4th 2014`,
+    publisher: `HarperCollins, Harpercollins`,
+    language: `English`,
+    pages: 416
+},
+{
+    id: 10,
+    title: `Twisted Lies`,
+    category: `recommended`,
+    author: `Ana Huang`,
+    img:`https://covers.openlibrary.org/b/id/12816871-L.jpg`,
+    href: `https://covers.openlibrary.org/b/id/12816871-L.jpg`,
+    ratings: `52`,
+    have_read: `39`,
+    publish_data:`2022`,
+    publisher: `Little, Brown Book Group Limited`,
+    language: `English`,
+    pages: 216
+},
+]
+
+
+export default recommend;
