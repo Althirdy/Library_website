@@ -4,6 +4,7 @@
 @import "./component/hero";
 @import "./component/recommend";
 @import "./component/_about.scss";
+@import "./component/books";
 
 * {
     padding: 0;
@@ -13,16 +14,18 @@
     text-decoration: none;
 
 }
+html{
+    scroll-behavior: smooth;
 
+}
 body {
     background-color: $body-main-bg;
-
     .hero_section {
-        position: relative;
         background: url(../Imges/hero_background.png);
         background-size: cover;
         overflow: hidden;
-        padding-bottom: 15vh;
+        padding-bottom: 10vh;
+        // height: auto;
 
     }
 

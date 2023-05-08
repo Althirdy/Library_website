@@ -3,8 +3,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     position: relative;
-    gap: 1rem;
+    gap: 1.5rem;
     font-family: $font-secondary;
 
     h1 {
@@ -58,9 +59,11 @@
     }
 
     .community {
-        bottom: -8rem;
-        left: 0;
-        position: absolute;
+        // bottom: -8rem;
+        // left: 0;
+        margin-top: 3vh;
+        top: 0;
+        position: relative;
         display: flex;
 
         .pic {

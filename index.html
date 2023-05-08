@@ -32,8 +32,8 @@
                 </div>
                 <ul class="navbar">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Books</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#book">Books</a></li>
                 </ul>
             </nav>
             <!-- END OF NAVBAR -->
@@ -44,8 +44,8 @@
                 <p class="desc">Let us guide you through the sea of books. Find your next
                     adventure in our collection of captivating reads.</p>
                 <div class="btn_container">
-                    <button class="explore btn">Explore Now</button>
-                    <button class="about btn">About us</button>
+                    <a href="#book"> <button class="explore btn" id="explore_btn">Explore Now</button></a>
+                    <a href="#about"><button class="about btn" id="about_btn">About us</button></a>
                 </div>
                 <div class="community">
                     <div class="pic_container">
@@ -78,7 +78,8 @@
         <!-- end of Recommended Books -->
         <!-- About section -->
         <section id="about">
-            <img src="./Imges/Right_side_img.png" alt="">
+            <img src="./Imges/Right_side_img.png" alt="" data-aos="fade-left" data-aos-offset="200"
+                data-aos-easing="ease-in-sine">
             <div class="right_about" data-aos="fade-right">
                 <h1>Find Your Favorite
                     Books Here</h1>
@@ -101,7 +102,26 @@
             </div>
         </section>
         <!-- End of About -->
+        <!-- Start of Books -->
+        <section class="book" id="book">
+            <div class="nav_book">
+                <h3>Popular by genre</h3>
+                <ul class="nav_left">
+                    <li class="book_nav" data-id="All Genre" type="button">All Genre</li>
+                    <li class="book_nav" data-id="Science" type="button">Science</li>
+                    <li class="book_nav" data-id="Mathematics" type="button">Mathematics</li>
+                    <li class="book_nav" data-id="Programming" type="button">Programming</li>
+                    <li class="book_nav" data-id="Fiction" type="button">Fiction</li>
+                    <li class="book_nav" data-id="Literature" type="button">Literature</li>
+                </ul>
+            </div>
+            <div class="books">
 
+            </div>
+
+
+        </section>
+        <!-- End of books -->
     </div>
 
 
