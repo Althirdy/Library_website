@@ -165,19 +165,21 @@ nav .show_navbar {
   width: 50px;
   height: 50px;
   position: absolute;
+  border-radius: 50%;
+  border: 2px solid #aceed0;
 }
 .hero_text .community .first {
-  background: url(../Imges/icon.png);
+  background: url("https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/340241818_725164109393436_8853687772044499265_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGNDoQdhtUsK8AOKG4EagkMoyKS8iQztvOjIpLyJDO28xoRmgSgKd8adQvgudca4wZ6ZKS9VkL6WbE4sjACq_bb&_nc_ohc=zljFUk5Y7wcAX9TzZE1&_nc_ht=scontent.fmnl33-2.fna&oh=00_AfDwZKnLD0ABPOEo-ZbyxSknfExtDcOUItEj7p2729QR1w&oe=645E6483");
   background-size: contain;
 }
 .hero_text .community .second {
   left: 25px;
-  background: url(../Imges/icon.png);
+  background: url("https://scontent.fmnl33-2.fna.fbcdn.net/v/t39.30808-6/306122395_5325503727539635_4873087090570155813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGPYtzW3fSHpiMA9O4Np0Dlh6xEX6b180WHrERfpvXzRWineHFDnIpOxAqAn1IOl1Sqqov-slAF5E4cAoFuou1L&_nc_ohc=6y5-fk61t8oAX9F_wwF&_nc_oc=AQlONl-AK2Pyx_ANm9NUa_8wa37P_wsJ8LQESf4pZ2EiRutbnO7mE4ixC5BMpSP3dEo&_nc_ht=scontent.fmnl33-2.fna&oh=00_AfCb1GPRQdKCDWb_fQrFVd-RKyhTWKSSD9RNSOJ4B_Om_Q&oe=645EB120");
   background-size: contain;
 }
 .hero_text .community .third {
   left: 50px;
-  background: url(../Imges/icon.png);
+  background: url("https://scontent.fmnl33-4.fna.fbcdn.net/v/t1.6435-9/92557163_827927347701586_4280408787090669568_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFa_vaQNjn1vXjtSMum2vAWrHXpIZgS11esdekhmBLXV5MFIJOkZhD1Y1qyDJ8-VcSste2hp9Z4TPWRpFIhuWUZ&_nc_ohc=nJmrAif4K0QAX8rCQ4A&_nc_ht=scontent.fmnl33-4.fna&oh=00_AfDOV_8VQUE843m_gCZZZM76nSe9oTOaceT7HLnjCvoipg&oe=6481DBBE");
   background-size: contain;
 }
 .hero_text .community .community_desc {
@@ -304,11 +306,12 @@ nav .show_navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .recommend .card .book {
-  width: 130px;
-  height: 12rem;
+  margin: 0;
+  width: 100px;
+  height: 10rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;

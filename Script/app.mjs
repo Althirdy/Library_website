@@ -41,7 +41,7 @@ const showin_book = (data) => {
         </div>
         <div class="rating">
             <img src="./Imges/star.png" alt="">
-            <button id='${n.id}'>view</button>
+           <a href="${n.href}" target="_blank"> <button id='${n.id}'>view</button></a>
         </div>
     </div>
     `
@@ -60,7 +60,7 @@ const main_book_show = main_book.map(n => (
         </div>
         <div class="rating">
             <img src="./Imges/star.png" alt="">
-            <button id='${n.id}'>view</button>
+           <a href="${n.href}" target="_blank"> <button id='${n.id}'>view</button></a>
         </div>
     </div>
     `
@@ -80,7 +80,7 @@ const recommend_data = recommended.map(n => (
 </div>
 <div class="bot">
     <img src="./Imges/star.png" alt="">
-    <button id="${n.id}">View</button>
+     <a href="${n.href}" target="_blank"><button id="${n.id}">View</button></a>
 </div>
 </div>
 </div>`
